@@ -90,7 +90,6 @@ public class ListaArreglo<T> implements Lista<T> {
             throw new RuntimeException("La lista está vacía");
         }
 
-        
         T itemEliminado = items[tamanio];
         items[tamanio] = null;
 
@@ -110,7 +109,6 @@ public class ListaArreglo<T> implements Lista<T> {
             throw new RuntimeException("La lista está vacía");
         }
 
-        
         T itemEliminado = items[0];
         
         for (int i = 0; i < items.length; i++)  {
@@ -217,10 +215,6 @@ public class ListaArreglo<T> implements Lista<T> {
     */
     @Override
     public int longitud(){
-        //if (tamanio == 0) {
-        //    throw new RuntimeException("La lista está vacía");
-        //}
-
         return tamanio;
     }
 
