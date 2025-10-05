@@ -66,11 +66,9 @@ public class ListaEnlazada<T> implements Lista<T> {
             throw new NoSuchElementException("La lista está vacía");
         }
 
-        Nodo<T> nodoAux = nodoCabeza;
         T dato = nodoCabeza.dato;
         nodoCabeza = nodoCabeza.siguiente;
-    
-        nodoAux = null;
+
         return dato;
     }
 
@@ -148,5 +146,9 @@ public class ListaEnlazada<T> implements Lista<T> {
         }
 
         return -1;
+    }
+
+    public void imprimir(){
+        
     }
 }

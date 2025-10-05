@@ -1,11 +1,20 @@
-public class ListaEnlazada <T> implements Lista <T>{
+/**
+ * El ejercicio consistia en completar los metodos, lo que
+ * habia que comentar estaba con __________________
+ * asi que no hay que compilar este codigo.
+ * Parcial simulacro creado por UNRC.
+*/
+
+public class ListaEnlazada<T> implements Lista<T>{
     private Nodo <T> comienzo;
     private int cantidad;
     
+    @Override
     public boolean isEmpty(){
-        return (this.cantidad == 0)
+        return (this.cantidad == 0);
     }
 
+    @Override
     public void eliminarPrimero(){
         if(comienzo != null){
             this.comienzo.setNext(comienzo.getNext());
@@ -13,6 +22,7 @@ public class ListaEnlazada <T> implements Lista <T>{
         this.cantidad--;
     }
 
+    @Override
     public T buscar(int i){
         if (this.isEmpty()){
             throw new ListaException("Lista Vacia");

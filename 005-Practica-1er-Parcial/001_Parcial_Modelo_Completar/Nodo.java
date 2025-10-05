@@ -1,3 +1,10 @@
+/**
+ * El ejercicio consistia en completar los metodos, lo que
+ * habia que comentar estaba con __________________
+ * asi que no hay que compilar este codigo.
+ * Parcial simulacro creado por UNRC.
+*/
+
 public class Nodo <T>{
     private T info;
     private Nodo <T> next;
